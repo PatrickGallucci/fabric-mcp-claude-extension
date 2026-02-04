@@ -1,0 +1,41 @@
+{
+  "manifest_version": "0.4",
+  "name": "fabric-mcp-server",
+  "version": "1.0.0",
+  "display_name": "Microsoft Fabric MCP Server",
+  "description": "A local-first MCP server providing AI agents with comprehensive access to Microsoft Fabric's public APIs, item definitions, and best practices for AI-assisted development.",
+  "author": {
+    "name": "Microsoft Corporation",
+    "url": "https://github.com/microsoft/mcp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/mcp"
+  },
+  "server": {
+    "type": "binary",
+    "entry_point": "server/Fabric.Mcp.Server.exe",
+    "mcp_config": {
+      "command": "${__dirname}/server/Fabric.Mcp.Server.exe",
+      "args": []
+    }
+  },
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["win32"]
+  },
+  "tools": [
+    {
+      "name": "platform_get_platform_apis",
+      "description": "Get detailed information about Microsoft Fabric platform APIs including endpoints, operations, and schemas."
+    },
+    {
+      "name": "platform_get_item_definitions",
+      "description": "Get JSON schemas for Fabric item types (Lakehouses, pipelines, semantic models, notebooks, etc.)."
+    },
+    {
+      "name": "platform_get_best_practices",
+      "description": "Get embedded guidance on pagination, error handling, and recommended patterns for Fabric development."
+    }
+  ]
+}
