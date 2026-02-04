@@ -1,4 +1,4 @@
-# Microsoft Fabric MCP Server - Desktop Extension
+# Microsoft Fabric MCP Server - Claude Desktop Extension
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
@@ -136,10 +136,10 @@ fabric-mcp-extension/
 
 This MCP server is **local-first** and **privacy-focused**:
 
--  **No network connections** to Microsoft Fabric or any external services
--  **No authentication required** - uses bundled API specifications
--  **No data collection** - runs entirely offline
--  **Read-only operations** - cannot modify your Fabric environment
+- **No network connections** to Microsoft Fabric or any external services
+- **No authentication required** - uses bundled API specifications
+- **No data collection** - runs entirely offline
+- **Read-only operations** - cannot modify your Fabric environment
 
 The server provides AI agents with API documentation and schemas to help generate correct code, but never accesses actual Fabric resources.
 
